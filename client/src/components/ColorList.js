@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import ColorForm from './ColorForm';
 
 const initialColor = {
   color: "",
@@ -108,6 +108,7 @@ const ColorList = ({ colors, updateColors }) => {
         </form>
       )}
       <div className="spacer" />
+      <ColorForm updateColors={updateColors}/>
     </div>
   );
 };
